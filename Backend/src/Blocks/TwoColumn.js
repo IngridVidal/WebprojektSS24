@@ -1,0 +1,51 @@
+export const TwoColumn = {
+
+    slug: 'twoColumn',
+    labels: {
+        singular: 'TwoColumn Block',
+        plural: 'TwoColumn Blocks',
+    },
+
+    fields: [
+        {
+            name: 'heading',
+            label: 'Heading',
+            type: "text",
+
+        },
+        {
+            name: "text",
+            label: "text",
+            type: "textarea",
+
+        },
+
+        {
+            name: 'image',
+            label:'Image',
+            type: 'upload',
+            relationTo: 'media'
+
+        } ,
+
+
+        {
+            name: 'direction',
+            label: 'Direction',
+            type: 'select',
+            options: [
+                {
+                    label: 'Default',
+                    value: 'default'
+                },
+                {
+                    label: 'Reverse',
+                    value: 'reverse',
+                },
+
+
+            ]
+
+        }
+    ]
+}
